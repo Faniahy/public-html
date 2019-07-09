@@ -1,0 +1,174 @@
+<html>
+    <title>Test Javascript</title>
+    <head>
+        <!--<script language="javascript" type="text/javascript">
+            // document.write("Hello world")
+            function sayHello(){
+                alert("Hello World");
+            }
+        </script>-->
+        <!--<script src="script.js"></script>-->
+        <script type="text/javascript" src="vue.js"></script>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- onload="checkCookies()" -->
+        <!--<input id="patron" type="button" value="Say Hello"/>-->
+        <!--<div id="patron"></div>-->
+        <!--<form action="#">
+        First name: <input type="text" name="fname" value="Donald">
+        <input type="submit" value="Submit">
+        </form> 
+
+        <p id="demo"></p>
+
+        <script>
+        document.getElementById("demo").innerHTML =
+        "Number of forms: " + document.forms.length;
+        </script>-->
+
+        <!--<h1 id="id1">My Heading 1</h1>
+
+        <button type="button"
+        onclick="document.getElementById('id1').style.color = 'green'">
+        Click Me!</button>
+
+        <p id="demo"></p>
+
+        <script>
+        function checkCookies() {
+            var text = "";
+            if (navigator.cookieEnabled == true) {
+                text = "Cookies are enabled.";
+            } else {
+                text = "Cookies are not enabled.";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+        </script>-->
+        <!--<p>This example uses the addEventListener() method to add two click events to the same button.</p>
+
+        <button id="myBtn">Try it</button>
+
+        <script>
+        var x = document.getElementById("myBtn");
+        x.addEventListener("click", myFunction);
+        x.addEventListener("click", someOtherFunction);
+
+        function myFunction() {
+            alert ("Hello World!");
+        }
+
+        function someOtherFunction() {
+            alert ("This function was also executed!");
+        }
+        </script>-->
+        <h1 id="intro">My First Page</h1>
+
+        <p id="demo">Hello World!</p>
+
+        <script>
+        var myText;
+        function factorial(n){
+            if(n == 0){
+                return 1;
+            }
+            else{
+                return n * factorial(n-1);
+            }
+        }
+        function calculAvecIndexation(tableau, n1, n2){
+            var val = 0;
+            for(var i=n1;i<=n2;i++){
+                val += tableau[i];
+            }
+            return val;
+        }
+
+        //myText = factorial(0);
+
+        myTableau = [31,23,49,6,13];
+
+        // myText = calculAvecIndexation(myTableau,3,4);
+
+        var val=3;
+        var alert="";
+        var nbr=0;
+        function rechercheTableau(tableau, val){
+            // for(var i=0; i<tableau.length;i++){
+            //    nbr = tableau[i];
+            //     //console.log(nbr);
+            //      if(nbr==val){
+            //         alert = "Valeur Trouver";
+            //         console.log(tableau[i]);
+            //         console.log(val);
+            //         return alert;
+            //     }
+            // }
+            // for(var i in tableau){
+            //    nbr = tableau[i];
+            //     //console.log(nbr);
+            //      if(nbr===val){
+            //         alert = "Valeur Trouver";
+            //         console.log(tableau[i]);
+            //         console.log(val);
+            //         return alert;
+            //     }
+            // }
+            var i=0;
+            while(i<tableau.length){
+                if(val == tableau[i]){
+                    alert = "Trouver";
+                }
+                else{
+                    alert="Non Trouver";
+                    i++;
+                }
+                return alert;
+            }
+        }
+        function triTableau(tableau){
+            tableau.sort();
+            return tableau;
+        }
+
+        // var alert = rechercheTableau(myTableau,val);
+        var alert = triTableau(myTableau);
+        for(var i in alert){
+            console.log(alert[i]);
+        }
+
+        var number = Math.random();
+        document.getElementById("demo").innerHTML = number;
+        
+        </script>
+
+        <!-- <div id="app">
+             <button @click="say">SAY</button>
+            <a v-bind:href="link">{{ message}}</a>
+            <div class="ui succes message">
+                <p v-if="success">Bravo votre enregistrement a marché.</p>
+                <div v-else>
+                    <p>C'a n'a pas marché!</p>
+                </div>
+                <p v-show="success">Bravo votre enregistrement a marché.</p>
+            </div>
+           <div v-for="person in persons">
+                {{ person }}
+           </div>
+
+        
+           <input type="text" v-model:value="message">
+           <p>{{ message }}</p>
+        </div> -->
+        <div id="app">
+            <p>{{ persons }}</p>
+            <button @click="addPerson">Ajouter une personne</button>
+        </div>
+    </body>
+    <!--<script type="text/javascript">
+        // document.getElementById('patron').innerHTML = "Hello World";
+        alert(document.documentElement.innerHTML);
+    </script>-->
+    <script src="app.js"></script>
+</html>

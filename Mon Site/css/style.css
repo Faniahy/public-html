@@ -1,0 +1,12 @@
+h1{
+	text-align: center;
+}
+btn btn-danger{
+	margin-left: 100px;
+}
+.container{
+	margin-top: 30px;
+}
+.btn .badge{
+	margin-left: 5px;
+}
