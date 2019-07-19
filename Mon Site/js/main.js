@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 		$('#content').css({
 			'background-color':'blue',
-			'transform':'scale(2)'
+			'transform':'scale(0.25)'
 		});
 	});
 
