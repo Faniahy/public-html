@@ -33,3 +33,10 @@ btn btn-danger{
 .afficher{
 	color: #39f;
 }
+
+#conteneur{
+	display: flex;
+}
+.element{
+	background-color: #e74c3c;
+}
