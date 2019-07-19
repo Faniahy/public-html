@@ -9,19 +9,18 @@ $(document).ready(function(){
 
 		/*$('h1').hide();*/
 
+		$('.texte').html("<div>Je suis là!</div>");
+
+		$('#content').css({
+			'background-color':'blue',
+			'transform':'scale(2)'
+		});
 	});
 
 
 	$("#fb").click(function(){
 	alert("Hello les gens");
 	});
-
-	/*$('.btn btn-danger').click(function(){
-
-		$('.btn btn-danger').removeClass(".btn btn-danger");
-
-	});*/
-
 
 });
 

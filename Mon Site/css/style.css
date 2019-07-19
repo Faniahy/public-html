@@ -18,7 +18,19 @@ btn btn-danger{
 	background-color: white;
 	border: 1px solid black;
 	box-shadow: 10px 5px 5px 5px grey;
+	transition: all 1s ease;
 }
+
+#content:hover{
+	background-color: red;
+	transform: scale(1.25);
+	-webkit-transform:scale(1.25); /* Safari et Chrome */
+	-moz-transform:scale(1.25); /* Firefox */
+	-ms-transform:scale(1.25); /* Internet Explorer 9 */
+	-o-transform:scale(1.25); /* Opera */
+
+}
+
 .afficher{
 	color: #39f;
 }
