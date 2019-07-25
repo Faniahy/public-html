@@ -39,7 +39,7 @@
 	    }
     }
 
-    plusPetit(100,1000,10000);
+    //plusPetit(100,1000,10000);
 
     /* Retourne le premier element d'un tableau */
     function premierElementTableau($tab){
@@ -48,7 +48,7 @@
     }
 
     $tab = [1,2,3];
-    premierElementTableau($tab);
+    //premierElementTableau($tab);
 
    /* Retourne le dernier element d'un tableau */
     function dernierElementTableau($tab){
@@ -56,5 +56,25 @@
         if(is_null($tab)) return null;
         else return $tab[$l-1];
     }
+
+    function plusGrand($tab){
+        if(is_null($tab)) return null;
+        else{
+            echo max($tab);
+        }
+    }
+    function plusGrand2($tab){
+        if(is_null($tab)) return null;
+        else{
+            $size = sizeof($tab);
+		    $max = $tab[0];
+		for ($i = 0; $i < $size - 1; $i++)
+			if ($tab[$i] < $tab[$i + 1] && $tab[$i + 1] > $max)
+				$max = $tab[$i + 1];
+		return $max;
+        }
+    }
+    plusGrand($tab);
+    plusGrand2($tab);
 
 ?>
