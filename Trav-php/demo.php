@@ -71,7 +71,7 @@
 		for ($i = 0; $i < $size - 1; $i++)
 			if ($tab[$i] < $tab[$i + 1] && $tab[$i + 1] > $max)
 				$max = $tab[$i + 1];
-		return $max;
+		echo $max;
         }
     }
     plusGrand($tab);
