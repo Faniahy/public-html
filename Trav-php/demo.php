@@ -28,6 +28,8 @@
 	} else {
 		echo 'Désoler vous n\'avez pas la moyenne';
 	}*/
+
+	/* Plus Petit des 3 nombres */
 	 function plusPetit($n,$a,$b){
 		if($n<$a){
 	        if($a<$b) echo $n;
@@ -39,5 +41,20 @@
 
     plusPetit(100,1000,10000);
 
+    /* Retourne le premier element d'un tableau */
+    function premierElementTableau($tab){
+        if(is_null($tab)) return null;
+        else echo "\n".$tab[0];
+    }
+
+    $tab = [1,2,3];
+    premierElementTableau($tab);
+
+   /* Retourne le dernier element d'un tableau */
+    function dernierElementTableau($tab){
+        $l = sizeof($tab);
+        if(is_null($tab)) return null;
+        else return $tab[$l-1];
+    }
 
 ?>
