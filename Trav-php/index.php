@@ -22,5 +22,20 @@
 				</div>
 			</form>
 		</div>
+		<div>
+			<!-- Code in Game /Apprendre PHP INTEGRATION HTML -->
+			<select>
+			<?php
+				for($i=0;$i<=10;$i++){
+					$char = "";
+					if($i%2==0) $char=$i." "."pair";
+					else $char=$i." "."impair";
+					echo "					
+						<option value='$i'>$char</option>
+					";
+				}
+			?>
+			</select>	
+		</div>
 	</body>
 </html>
