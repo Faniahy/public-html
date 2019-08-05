@@ -83,10 +83,24 @@
 		</p>
 		<p>
 			<?php
-				for($i=1;$i<=10;$i++){
+				/*for($i=1;$i<=10;$i++){
 					for($j=1;$j<=$i;$j++){
 						echo '$i $j = '." ".$i*$j;
 					}
+				}*/
+			?> 
+		</p>
+		<p>
+			<?php
+				$S="DAMN hard ma poule";
+				$input=explode(" ",$S);
+				for($i=0;$i<sizeof($input);$i++){
+				    //echo $input[$i];
+				    $c=$input[$i];
+				    if(!ctype_upper($c)){
+				        $s=strlen($c);
+				        echo "$s";
+				    }
 				}
 			?>
 		</p>
