@@ -10,22 +10,21 @@ $(document).ready(function(){
 		alert("La couleur vient de changer en rouge!");*/
 
 		/*$('h1').hide();*/
-
 		/*Pour les animation, on doit faire $().animate();*/
 
+
+		$('.texte').html("<div>Je suis là!</div>");
+
+		$('#content').css({
+			'background-color':'blue',
+			'transform':'scale(0.25)'
+		});
 	});
 
 
 	$("#fb").click(function(){
 	alert("Hello les gens");
 	});
-
-	/*$('.btn btn-danger').click(function(){
-
-		$('.btn btn-danger').removeClass(".btn btn-danger");
-
-	});*/
-
 
 });
 
